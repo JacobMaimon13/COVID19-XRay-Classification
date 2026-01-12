@@ -59,9 +59,10 @@ The **Transfer Learning (ResNet18)** approach demonstrated superior performance 
     * The code expects data in a `data/` folder.
     * You will need to download the [COVID-19 dataset](https://github.com/ieee8023/covid-chestxray-dataset) and the [Kaggle Pneumonia dataset](https://www.kaggle.com/datasets/tolgadincer/labeled-chest-xray-images).
 
-4.  **Run the training script:**
+4.  **Prepare the Dataset:**
+    Organize the raw data into training and testing CSV files by running:
     ```bash
-    python main.py
+    python -m src.prepare_data
     ```
 
 ## 📜 License
