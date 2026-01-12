@@ -46,8 +46,7 @@ The **Transfer Learning (ResNet18)** approach demonstrated superior performance 
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/JacobMaimon13/COVID19-XRay-Classification.git](https://github.com/JacobMaimon13/COVID19-XRay-Classification.git)
-    cd COVID19-XRay-Classification
+    git clone https://github.com/JacobMaimon13/COVID19-XRay-Classification.git
     ```
 
 2.  **Install dependencies:**
