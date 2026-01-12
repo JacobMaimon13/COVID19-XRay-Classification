@@ -38,9 +38,20 @@ To address the dataset imbalance, we conducted extensive experiments:
 * **Confusion Matrices:** Detailed analysis of misclassifications.
 
 ## 📊 Results
-The **Transfer Learning (ResNet18)** approach demonstrated superior performance compared to the custom CNN, achieving higher accuracy and better separation in the t-SNE latent space.
 
-*(See the `notebooks` or run the code to generate specific plots)*
+The **Transfer Learning (ResNet18)** approach demonstrated superior performance compared to the custom CNN.
+
+### Visual Analysis
+Below is the **t-SNE visualization** showing how the model learned to separate the three classes in the latent space. As seen, the classes are well-clustered, indicating robust feature learning.
+
+![t-SNE Visualization](assets/tsne_plot.png)
+*(Figure 1: t-SNE projection of the model's feature embeddings)*
+
+### Classification Performance
+The confusion matrix highlights the model's high accuracy, with minimal confusion between COVID-19 and other pneumonia types.
+
+![Confusion Matrix](assets/confusion_matrix.png)
+*(Figure 2: Confusion Matrix on the Test Set)*
 
 ## 🚀 How to Run
 
