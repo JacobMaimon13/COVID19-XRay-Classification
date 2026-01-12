@@ -14,6 +14,12 @@ This project tackles the critical challenge of classifying chest X-ray images in
 
 A major focus of this research was dealing with **imbalanced data**, as COVID-19 samples were significantly scarcer than other classes. We experimented with various techniques to improve model generalization and utilized **Transfer Learning** to achieve robust results.
 
+## 📂 Dataset Samples
+Below are representative samples from the dataset, showing the visual differences between the three classes:
+
+![Dataset Samples](assets/dataset_samples.png)
+*(Figure 1: Representative chest X-ray images showing Normal, Bacterial Pneumonia, and COVID-19 cases)*
+
 ## 🔬 Methodology
 
 ### 1. Data Preparation
@@ -33,31 +39,22 @@ To address the dataset imbalance, we conducted extensive experiments:
 * **Over-sampling (Augmentation):** Artificially generating COVID-19 samples using geometric transformations.
 * **Class Weights:** Adjusting the loss function (CrossEntropy) to penalize errors on the minority class more heavily.
 
-### 4. Explainability & Analysis
-* **t-SNE Visualization:** We projected the high-dimensional feature maps into 2D to visualize class separability.
-* **Confusion Matrices:** Detailed analysis of misclassifications.
-
 ## 📊 Results
 
-The **Transfer Learning (ResNet18)** approach demonstrated superior performance compared to the custom CNN.
+The **Transfer Learning (ResNet18)** approach demonstrated superior performance compared to the custom CNN, achieving higher accuracy and better separation between classes.
 
-### Visual Analysis
-Below is the **t-SNE visualization** showing how the model learned to separate the three classes in the latent space. As seen, the classes are well-clustered, indicating robust feature learning.
+### Visual Analysis (t-SNE)
+The plot below shows the projection of the model's feature embeddings into 2D space. The clear clustering indicates that the model has successfully learned to distinguish between the three conditions.
 
-![t-SNE Visualization](figures/tsne_plot.png)
-*(Figure 1: t-SNE projection of the model's feature embeddings)*
-
-### Classification Performance
-The confusion matrix highlights the model's high accuracy, with minimal confusion between COVID-19 and other pneumonia types.
-
-![Confusion Matrix](figures/confusion_matrix.png)
-*(Figure 2: Confusion Matrix on the Test Set)*
+![t-SNE Visualization](assets/tsne_plot.png)
+*(Figure 2: t-SNE projection of the model's feature embeddings)*
 
 ## 🚀 How to Run
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/JacobMaimon13/COVID19-XRay-Classification.git
+    git clone [https://github.com/JacobMaimon13/COVID19-XRay-Classification.git](https://github.com/JacobMaimon13/COVID19-XRay-Classification.git)
+    cd COVID19-XRay-Classification
     ```
 
 2.  **Install dependencies:**
@@ -73,6 +70,11 @@ The confusion matrix highlights the model's high accuracy, with minimal confusio
     Organize the raw data into training and testing CSV files by running:
     ```bash
     python -m src.prepare_data
+    ```
+
+5.  **Run Training:**
+    ```bash
+    python main.py
     ```
 
 ## 📜 License
