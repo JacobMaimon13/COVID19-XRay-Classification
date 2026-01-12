@@ -44,13 +44,13 @@ The **Transfer Learning (ResNet18)** approach demonstrated superior performance 
 ### Visual Analysis
 Below is the **t-SNE visualization** showing how the model learned to separate the three classes in the latent space. As seen, the classes are well-clustered, indicating robust feature learning.
 
-![t-SNE Visualization](figuers/tsne_plot.png)
+![t-SNE Visualization](figures/tsne_plot.png)
 *(Figure 1: t-SNE projection of the model's feature embeddings)*
 
 ### Classification Performance
 The confusion matrix highlights the model's high accuracy, with minimal confusion between COVID-19 and other pneumonia types.
 
-![Confusion Matrix](figuers/confusion_matrix.png)
+![Confusion Matrix](figures/confusion_matrix.png)
 *(Figure 2: Confusion Matrix on the Test Set)*
 
 ## 🚀 How to Run
