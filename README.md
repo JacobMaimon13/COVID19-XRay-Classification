@@ -17,7 +17,7 @@ A major focus of this research was dealing with **imbalanced data**, as COVID-19
 ## 📂 Dataset Samples
 Below are representative samples from the dataset, showing the visual differences between the three classes:
 
-![Dataset Samples](assets/dataset_samples.png)
+![Dataset Samples](figures/dataset_samples.png)
 *(Figure 1: Representative chest X-ray images showing Normal, Bacterial Pneumonia, and COVID-19 cases)*
 
 ## 🔬 Methodology
@@ -46,7 +46,7 @@ The **Transfer Learning (ResNet18)** approach demonstrated superior performance 
 ### Visual Analysis (t-SNE)
 The plot below shows the projection of the model's feature embeddings into 2D space. The clear clustering indicates that the model has successfully learned to distinguish between the three conditions.
 
-![t-SNE Visualization](assets/tsne_plot.png)
+![t-SNE Visualization](figures/tsne_plot.png)
 *(Figure 2: t-SNE projection of the model's feature embeddings)*
 
 ## 🚀 How to Run
